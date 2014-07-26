@@ -1,0 +1,50 @@
+.hero {
+  @include linear-gradient($ssg-blue, $ssg-green);
+  color: white;
+  padding-bottom: 3em;
+
+  header {
+    @include outer-container;
+    padding: 2em;
+
+    h1 {
+      float: left;
+    }
+  }
+
+  .hgroup {
+    @include outer-container;
+    text-align: center;
+
+    h1 {
+      margin: 1em auto 0;
+      max-width: em(1000, 32);
+    }
+
+    p {
+      margin: 1em auto 3em;
+      max-width: em(600);
+      color: rgba(white, .8);
+    }
+
+    nav {
+      a {
+        @include hide-text();
+        @include size(3em);
+        background: rgba($ssg-dark-green, .8);
+        border-radius: 50%;
+        display: inline-block;
+
+        &:first-child {
+          margin-right: .5em;
+        }
+
+        &.twitter {
+        }
+
+        &.facebook {
+        }
+      }
+    }
+  }
+}

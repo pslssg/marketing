@@ -1,0 +1,9 @@
+name: Start.Stay.Grow. Marketing Site
+url: http://startstaygrow.org
+
+sass:
+  style: :compressed
+
+exclude:
+- README
+- LICENSE

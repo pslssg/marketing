@@ -1,0 +1,19 @@
+footer {
+  @include row;
+  margin-bottom: 3em;
+
+  h1 {
+    float: left;
+  }
+}
+
+.thoughtbot {
+  text-align: center;
+  margin-bottom: 3em;
+
+  a {
+    display: block;
+    font-family: $header-font-family;
+    font-size: em(20);
+  }
+}
