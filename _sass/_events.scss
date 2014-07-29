@@ -1,0 +1,75 @@
+.events {
+  @include row;
+  text-align: center;
+  margin-bottom: 3em;
+
+  h2 {
+    color: $ssg-green;
+  }
+
+  .event-types {
+    @include row;
+    text-align: left;
+    margin-bottom: 3em;
+
+    li {
+      @include span-columns(4);
+    }
+
+    h3 {
+      color: $ssg-green;
+    }
+  }
+
+  .events-details {
+    @include span-columns(6);
+    text-align: left;
+
+    li {
+      @include row;
+      margin-bottom: 1em;
+    }
+
+    time {
+      @include span-columns(1 6);
+      font-size: em(14);
+      line-height: 1.2;
+      margin-top: .25em;
+      color: lighten($medium-gray, 10);
+    }
+
+    .hgroup {
+      @include span-columns(3 6);
+
+      h4 {
+        color: $dark-gray;
+      }
+    }
+
+    .register {
+      @include span-columns(2 6);
+      text-align: center;
+      background-color: $ssg-green;
+      color: white;
+      padding: .25em;
+      border-radius: $base-border-radius;
+      font-family: $header-font-family;
+
+      &:hover, &:focus {
+        background-color: darken($ssg-green, 15);
+      }
+    }
+  }
+
+  .photos {
+    @include span-columns(6);
+
+    li {
+      @include span-columns(3 6);
+      @include omega(2n);
+      margin-bottom: 1.5em;
+      height: em(130);
+      background-color: gray;
+    }
+  }
+}
