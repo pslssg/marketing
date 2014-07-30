@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-563.000000, -381.000000)" fill="#146B5A">
+            <g id="Header" sketch:type="MSLayerGroup" transform="translate(-46.000000, -7.000000)">
+                <path d="M632.692645,401.590046 L629.892264,401.590046 C629.562579,401.590046 629.194108,402.024454 629.194108,402.606251 L629.194108,404.627024 L632.692645,404.627024 L632.692645,407.508856 L629.194108,407.508856 L629.194108,416.158231 L625.889504,416.158231 L625.889504,407.508856 L622.895192,407.508856 L622.895192,404.627024 L625.889504,404.627024 L625.889504,402.932057 C625.889504,400.500147 627.576714,398.522039 629.892264,398.522039 L632.692645,398.522039 L632.692645,401.590046 L632.692645,401.590046 Z M628.282627,388.724586 C618.000344,388.724586 609.665139,397.059791 609.665139,407.342074 C609.665139,417.624358 618.000344,425.959563 628.282627,425.959563 C638.564911,425.959563 646.900115,417.624358 646.900115,407.342074 C646.900115,397.059791 638.564911,388.724586 628.282627,388.724586 L628.282627,388.724586 Z" id="facebook" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

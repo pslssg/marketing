@@ -1,12 +1,27 @@
 footer {
-  margin-bottom: 3em;
+  margin-bottom: $section-margin;
   text-align: center;
 
-  h1 {
+  h1.logo {
+    @include hide-text();
+    @include size(5em 4em);
+    background-image: url("/images/startstaygrow-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+
+  hr {
+    width: 3em;
+    margin: 2em auto;
   }
 
   .thoughtbot {
-    margin-bottom: 3em;
+    padding-bottom: 9em;
+    background-image: url("/images/thoughtbot.svg");
+    background-repeat: no-repeat;
+    background-size: 8em;
+    background-position: center bottom;
 
     a {
       display: block;

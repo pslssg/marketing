@@ -1,20 +1,42 @@
 .hero {
-  @include linear-gradient($ssg-blue, $ssg-green);
+  background-image: url("/images/cityskyline-4.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  padding-bottom: 3em;
+  padding: 5em 2em 5em;
+  position: relative;
+
+  .gradient-overlay {
+    @include linear-gradient($ssg-dark-green, $ssg-green);
+    @include position(absolute, 0em 0em 0em 0em);
+    z-index: $base-z-index;
+    opacity: .85;
+  }
 
   header {
     @include outer-container;
-    padding: 2em;
+    margin-bottom: 4em;
+    position: relative;
+    z-index: $base-z-index + 1;
+    text-align: center;
 
-    h1 {
-      float: left;
+    h1.logo {
+      @include hide-text();
+      @include size(2.5em 1.75em);
+      background-image: url("/images/startstaygrow-logo-white.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      margin-bottom: .5em;
     }
   }
 
   .hgroup {
     @include outer-container;
     text-align: center;
+    position: relative;
+    z-index: $base-z-index + 1;
 
     h1 {
       margin: 1em auto 0;
@@ -31,18 +53,24 @@
       a {
         @include hide-text();
         @include size(3em);
-        background: rgba($ssg-dark-green, .8);
-        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
         display: inline-block;
 
         &:first-child {
           margin-right: .5em;
         }
 
+        &:hover {
+          opacity: .5;
+        }
+
         &.twitter {
+          background-image: url("/images/twitter.svg");
         }
 
         &.facebook {
+          background-image: url("/images/facebook.svg");
         }
       }
     }

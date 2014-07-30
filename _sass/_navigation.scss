@@ -1,12 +1,10 @@
 nav.main {
-  float: right;
-
   li {
     display: inline-block;
     margin-right: 1em;
 
     a {
-      color: white;
+      color: $ssg-green;
       font-family: $header-font-family;
       font-size: em(14);
       font-weight: bold;
@@ -14,7 +12,7 @@ nav.main {
       text-transform: uppercase;
 
       &:hover, &:focus {
-        color: rgba(white, .6);
+        color: lighten($ssg-green, 15);
       }
     }
   }
