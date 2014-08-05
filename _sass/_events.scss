@@ -13,7 +13,9 @@
     margin-bottom: 3em;
 
     li {
-      @include span-columns(4);
+      @include media($large-screen) {
+        @include span-columns(4);
+      }
     }
 
     h3 {
@@ -22,8 +24,11 @@
   }
 
   .events-details {
-    @include span-columns(6);
     text-align: left;
+
+    @include media($large-screen) {
+      @include span-columns(6);
+    }
 
     li {
       @include row;
@@ -62,14 +67,23 @@
   }
 
   .photos {
-    @include span-columns(6);
+    @include media($large-screen) {
+      @include span-columns(6);
+    }
 
     li {
-      @include span-columns(3 6);
-      @include omega(2n);
       margin-bottom: 1.5em;
       height: em(130);
       background-color: gray;
+
+      @include media($medium-screen) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+
+      @include media($large-screen) {
+        @include span-columns(3 6);
+      }
     }
   }
 }

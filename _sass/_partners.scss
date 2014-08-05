@@ -11,11 +11,42 @@
   }
 
   li {
-    @include span-columns(2);
+    margin-bottom: 2em;
+
+    @include media(min-width $small-screen max-width $medium-screen) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media(min-width $medium-screen max-width em(1099)) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    @include media(em(1100)) {
+      @include span-columns(2);
+      margin-bottom: 0;
+    }
+
+    $partners: psl 0, technically 20px, campus-philly 18px, nvigor 30px, blackstone 40px, startup-phl 0;
+
+    @each $partner, $top in $partners {
+      &.#{$partner} a {
+        background-image: url("/images/partners/" + $partner + ".png");
+        background-position: center $top;
+
+        &:hover {
+          background-image: url("/images/partners/" + $partner + "-color.png");
+        }
+      }
+    }
   }
 
   a {
+    background-repeat: no-repeat;
     color: darken($ssg-blue, 20);
+    display: block;
+    padding-top: 8em;
     position: relative;
 
     &:hover {
@@ -25,13 +56,14 @@
     }
 
     .partner-info {
-      @include position(absolute, null null null -150px);
+      @include position(absolute, null -3em null -3em);
       background-color: darken($ssg-blue, 40);
       color: white;
       display: none;
-      margin-top: 1em;
+      margin-top: 1.5em;
       padding: 1em;
-      width: 300px;
+      text-align: left;
+      z-index: $base-z-index + 3;
 
       &:before {
         @include position(absolute, -0.75em null null 50%);
