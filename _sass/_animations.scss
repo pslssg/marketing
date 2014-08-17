@@ -1,0 +1,16 @@
+@include keyframes(fade-in) {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+%fade-in {
+  @include animation-duration(1.5s);
+  @include animation-fill-mode(both);
+  @include animation-name(fade-in);
+  @include animation-timing-function(ease);
+}

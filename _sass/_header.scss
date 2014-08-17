@@ -11,16 +11,17 @@
   .gradient-overlay {
     @include linear-gradient($ssg-dark-green, $ssg-green);
     @include position(absolute, 0em 0em 0em 0em);
-    z-index: $base-z-index;
     opacity: .85;
+    z-index: $base-z-index;
   }
 
   header {
+    @extend %fade-in;
     @include outer-container;
     margin-bottom: 4em;
     position: relative;
-    z-index: $base-z-index + 1;
     text-align: center;
+    z-index: $base-z-index + 1;
 
     h1.logo {
       @include hide-text();
@@ -34,9 +35,11 @@
   }
 
   .hgroup {
+    @extend %fade-in;
+    @include animation-delay(1s);
     @include outer-container;
-    text-align: center;
     position: relative;
+    text-align: center;
     z-index: $base-z-index + 1;
 
     h1 {
