@@ -53,11 +53,12 @@
       .partner-info {
         @include transition(opacity 0.5s ease-in-out);
         opacity: 1;
+        visibility: visible;
       }
     }
 
     .partner-info {
-      @include transition(opacity 0.5s ease-in-out);
+      @include transition(opacity 0.5s ease-in-out, visibility 0.5s ease-in-out);
       @include position(absolute, null -2em null -2em);
       background-color: darken($ssg-blue, 40);
       color: white;
@@ -66,6 +67,7 @@
       padding: 1em;
       text-align: left;
       z-index: $base-z-index + 3;
+      visibility: hidden;
 
       @include media($max-width) {
         @include position(absolute, null -3em null -3em);
