@@ -82,8 +82,6 @@
 
     li {
       margin-bottom: 1.5em;
-      height: em(130);
-      background-color: gray;
 
       @include media($medium-screen) {
         @include span-columns(6);
