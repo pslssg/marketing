@@ -17,11 +17,11 @@ footer {
   }
 
   .thoughtbot {
-    padding-bottom: 9em;
     background-image: url("/images/thoughtbot.svg");
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 8em;
-    background-position: center bottom;
+    padding-bottom: 9em;
 
     a {
       display: block;

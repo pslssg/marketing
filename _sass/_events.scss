@@ -1,7 +1,7 @@
 .events {
   @include row;
-  text-align: center;
   padding-top: $section-margin;
+  text-align: center;
 
   h2 {
     color: $ssg-green;
@@ -9,8 +9,8 @@
 
   .event-types {
     @include row;
-    text-align: left;
     margin-bottom: 3em;
+    text-align: left;
 
     li {
       @include media($large-screen) {
@@ -36,10 +36,14 @@
     }
 
     time {
+      color: lighten($medium-gray, 10);
       font-size: em(14);
       line-height: 1.2;
       margin-top: .25em;
-      color: lighten($medium-gray, 10);
+
+      .date {
+        display: block;
+      }
 
       @include media($small-screen) {
         @include span-columns(1 6);
@@ -57,20 +61,26 @@
     }
 
     .register {
-      text-align: center;
       background-color: $ssg-green;
-      color: white;
-      padding: 0.5em 1em;
       border-radius: $base-border-radius;
+      color: white;
       font-family: $header-font-family;
+      padding: 0.5em 1em;
+      text-align: center;
 
       @include media($small-screen) {
         @include span-columns(2 6);
         padding: .25em 1em;
       }
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: darken($ssg-green, 15);
+      }
+
+      &.disabled {
+        background-color: $medium-gray;
+        cursor: default;
       }
     }
   }

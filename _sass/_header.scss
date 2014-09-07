@@ -1,5 +1,4 @@
 .hero {
-  // background-attachment: fixed;
   background-image: url("/images/cityskyline-4.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -48,9 +47,9 @@
     }
 
     p {
+      color: rgba(white, .8);
       margin: 1em auto 3em;
       max-width: em(600);
-      color: rgba(white, .8);
     }
 
     nav {
