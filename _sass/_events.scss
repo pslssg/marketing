@@ -86,10 +86,6 @@
   }
 
   .photos {
-    @include media($large-screen) {
-      @include span-columns(6);
-    }
-
     li {
       margin-bottom: 1.5em;
 
