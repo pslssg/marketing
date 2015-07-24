@@ -24,11 +24,11 @@
     }
 
     @include media(em(1100)) {
-      @include span-columns(2);
+      @include span-columns(2.4);
       margin-bottom: 0;
     }
 
-    $partners: psl 0, technically 20px, campus-philly 40px, nvigor 30px, blackstone 40px, startup-phl 0;
+    $partners: psl 40px, technically 20px, campus-philly 40px, nvigor 30px, blackstone 40px, startup-phl 0;
 
     @each $partner, $top in $partners {
       &.#{$partner} a {
