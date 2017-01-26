@@ -1,4 +1,4 @@
-.events {
+.fellowship {
   @include row;
   padding-top: $section-margin;
   text-align: center;
@@ -7,7 +7,7 @@
     color: $ssg-green;
   }
 
-  .event-types {
+  .fellowship-details {
     @include row;
     margin-bottom: 3em;
     text-align: left;
@@ -23,7 +23,7 @@
     }
   }
 
-  .events-details {
+  .fellowship-details {
     text-align: left;
 
     @include media($large-screen) {
