@@ -28,7 +28,7 @@
       margin-bottom: 0;
     }
 
-    $partners: comcast 0px, veryapt 0px, lia 0px;
+    $partners: comcast 0px, lia 20px, veryapt 20px, compass 50px, leagueside 40px, oncora 30px, towerview 20px, kickup 30px, luxtech 30px, setvi 30px, guru 50px, smartypal 30px, sidecar 45px, petcoach 40px;
 
     @each $partner, $top in $partners {
       &.#{$partner} a {

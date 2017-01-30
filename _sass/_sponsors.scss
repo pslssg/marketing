@@ -6,30 +6,7 @@
     color: $ssg-blue;
   }
 
-  ul {
-    @include row;
-  }
-
-  li {
-    margin-bottom: 2em;
-
-    @include media(min-width $small-screen max-width $medium-screen) {
-      @include span-columns(6);
-      @include omega(2n);
-    }
-
-    @include media(min-width $medium-screen max-width em(1099)) {
-      @include span-columns(4);
-      @include omega(3n);
-    }
-
-    @include media(em(1100)) {
-      @include span-columns(2.4);
-      margin-bottom: 0;
-    }
-
-    $partners: psl 40px, comcast -10px, luxtech 50px, guru 0px, compass 0px, kickup 0px, leagueside 50px, lia 0px, oncora 0px, setvi 0px, smartypal 0px, towerview 0px, veryapt 50px;
-
+    $partners: comcast 0px;
     @each $partner, $top in $partners {
       &.#{$partner} a {
         background-image: url("/images/partners/" + $partner + ".png");
