@@ -30,13 +30,13 @@
 
     $partners: comcast 0px, lia 20px, veryapt 20px, compass 50px, leagueside 40px, oncora 30px, towerview 20px, kickup 30px, luxtech 30px, setvi 30px, guru 50px, smartypal 30px, sidecar 45px, petcoach 40px;
 
-    @each $partner, $top in $partners {
+    @each $partners in $partners {
       &.#{$partner} a {
-        background-image: url("/images/partners/" + $partner + ".png");
+        background-image: url ("/images/partners/" + $partner + ".png");
         background-position: center $top;
 
         &:hover {
-          background-image: url("/images/partners/" + $partner + "-color.png"); 
+          background-image: url ("/images/partners/" + $partner + "-color.png"); 
         }
       }
     }

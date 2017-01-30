@@ -7,13 +7,13 @@
   }
 
     $partners: comcast 0px;
-    @each $partner, $top in $partners {
+    @each $partner in $partners {
       &.#{$partner} a {
-        background-image: url("/images/partners/" + $partner + ".png");
+        background-image: url("/images/partners/" + $partner + ".png";
         background-position: center $top;
 
         &:hover {
-          background-image: url("/images/partners/" + $partner + "-color.png"); 
+          background-image: url("/images/partners/" + $partner + "-color.png"; 
         }
       }
     }
