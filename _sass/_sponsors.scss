@@ -1,4 +1,4 @@
-.partners {
+.sponsors {
   padding-top: $section-margin;
   text-align: center;
 
@@ -28,7 +28,7 @@
       margin-bottom: 0;
     }
 
-    $partners: comcast 0px, veryapt 0px, lia 0px;
+    $partners: psl 40px, comcast -10px, luxtech 50px, guru 0px, compass 0px, kickup 0px, leagueside 50px, lia 0px, oncora 0px, setvi 0px, smartypal 0px, towerview 0px, veryapt 50px;
 
     @each $partner, $top in $partners {
       &.#{$partner} a {

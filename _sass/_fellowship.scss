@@ -1,0 +1,22 @@
+.fellowship {
+  padding-top: $section-margin;
+  text-align: center;
+
+  h2 {
+    color: $ssg-green;
+  }
+  h3 {
+    color: $ssg-green;
+  }
+
+  ul {
+    @include row;
+    text-align: left;
+  }
+
+  li {
+    @include media($large-screen) {
+      @include span-columns(3);
+    }
+  }
+}
