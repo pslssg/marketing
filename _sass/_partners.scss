@@ -27,59 +27,5 @@
       @include span-columns(2.4);
       margin-bottom: 0;
     }
-
-    $partners: comcast 0px, lia 20px, veryapt 20px, compass 50px, leagueside 40px, oncora 30px, towerview 20px, kickup 30px, luxtech 30px, setvi 30px, guru 50px, smartypal 30px, sidecar 45px, petcoach 40px;
-
-    @each $partners in $partners {
-      &.#{$partner} a {
-        background-image: url ("/images/partners/" + $partner + ".png");
-        background-position: center $top;
-
-        &:hover {
-          background-image: url ("/images/partners/" + $partner + "-color.png"); 
-        }
-      }
-    }
-  }
-
-  a {
-    background-repeat: no-repeat;
-    color: darken($ssg-blue, 20);
-    display: block;
-    padding-top: 8em;
-    position: relative;
-
-    &:hover {
-      .partner-info {
-        @include transition(opacity 0.5s ease-in-out);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    .partner-info {
-      @include position(absolute, null -2em null -2em);
-      @include transition(opacity 0.5s ease-in-out, visibility 0.5s ease-in-out);
-      background-color: darken($ssg-blue, 40);
-      color: white;
-      margin-top: 1.5em;
-      opacity: 0;
-      padding: 1em;
-      text-align: left;
-      visibility: hidden;
-      z-index: $base-z-index + 3;
-
-      @include media($max-width) {
-        @include position(absolute, null -3em null -3em);
-      }
-
-      &:before {
-        @include position(absolute, -0.75em null null 50%);
-        @include size(1.5em);
-        @include transform(rotate(45deg));
-        background-color: darken($ssg-blue, 40);
-        content: "";
-      }
-    }
   }
 }
