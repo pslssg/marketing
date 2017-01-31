@@ -6,12 +6,13 @@
     color: $ssg-blue;
   }
 
-  h3.comcast {
-  @include hide-text();
-  background-image: url("/images/sponsors/comcast-color.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
+    h3.logo {
+    @include hide-text();
+    @include size(15em 10em);
+    background-image: url("/images/sponsors/comcast-nbcuniversal-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
   }
 }
 
