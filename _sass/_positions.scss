@@ -1,12 +1,17 @@
 .positions {
   padding-top: $section-margin;
   text-align: center;
-
+  
   h2 {
-    color: $ssg-green;
+    color: $ssg-blue;
   }
+
   h3 {
-    color: $ssg-green;
+    color: $ssg-blue;
+  }
+  
+  h5 {
+    color: $dark-gray;
   }
 
   ul {
