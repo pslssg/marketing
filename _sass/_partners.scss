@@ -8,13 +8,13 @@
 
   ul {
     @include row;
+    display: inline-block;
   }
 
   li {
-    margin-bottom: 2em;
-
+    
     @include media(min-width $small-screen max-width $medium-screen) {
-      @include span-columns(6);
+      @include span-columns(5);
       @include omega(2n);
     }
 
@@ -24,8 +24,7 @@
     }
 
     @include media(em(1100)) {
-      @include span-columns(2.4);
-      margin-bottom: 0;
+      @include span-columns(2);
     }
 
     h5.lia {
@@ -140,6 +139,15 @@
     @include hide-text();
     @include size(8em);
     background-image: url("/images/partners/petcoach-color.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    }
+
+    h5.doze {
+    @include hide-text();
+    @include size(8em);
+    background-image: url("/images/partners/doze-color.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
