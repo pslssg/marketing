@@ -161,5 +161,14 @@
     background-size: contain;
     display: inline-block;
     }
+
+    h5.houwzer {
+    @include hide-text();
+    @include size(6em);
+    background-image: url("/images/partners/houwzer-color.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    }
   }
 }
