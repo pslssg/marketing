@@ -12,20 +12,9 @@
   }
 
   li {
-    
-    @include media(min-width $small-screen max-width $medium-screen) {
-      @include span-columns(5);
-      @include omega(2n);
-    }
 
-    @include media(min-width $medium-screen max-width em(1099)) {
-      @include span-columns(4);
-      @include omega(3n);
-    }
-
-    @include media(em(1100)) {
-      @include span-columns(2);
-    }
+    display:inline-block;
+    padding-left: 30px;
 
     h5.lia {
     @include hide-text();
@@ -166,6 +155,24 @@
     @include hide-text();
     @include size(6em);
     background-image: url("/images/partners/houwzer-color.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    }
+
+    h5.emile {
+    @include hide-text();
+    @include size(6em);
+    background-image: url("/images/partners/emile-color.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    }
+
+    h5.smack {
+    @include hide-text();
+    @include size(6em);
+    background-image: url("/images/partners/smack-color.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
