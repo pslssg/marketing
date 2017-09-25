@@ -5,7 +5,7 @@ footer {
   h1.logo {
     @include hide-text();
     @include size(5em 4em);
-    background-image: url("/images/startstaygrow-logo.svg");
+    background-image: url("../images/startstaygrow-logo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;

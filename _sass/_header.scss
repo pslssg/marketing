@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/images/cityskyline-4.jpg");
+  background-image: url("../images/cityskyline-4.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@
     h1.logo {
       @include hide-text();
       @include size(2.5em 1.75em);
-      background-image: url("/images/startstaygrow-logo-white.svg");
+      background-image: url("../images/startstaygrow-logo-white.svg");
       background-repeat: no-repeat;
       background-size: contain;
       display: inline-block;
@@ -69,11 +69,11 @@
         }
 
         &.twitter {
-          background-image: url("/images/twitter.svg");
+          background-image: url("../images/twitter.svg");
         }
 
         &.facebook {
-          background-image: url("/images/facebook.svg");
+          background-image: url("../images/facebook.svg");
         }
       }
     }
